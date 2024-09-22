@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/addcards.css';
+import Latex from 'react-latex';
 
 const CardCreate = () => {
   const [title, setTitle] = useState('');
@@ -117,7 +118,7 @@ const CardCreate = () => {
       <ul>
         {cards.map((card, index) => (
           <li key={index}>
-            <strong>{card.title}</strong>: {card.response} (Created on: {card.date})
+            <strong><Latex>{card.title}</Latex></strong>: <Latex>{card.response}</Latex> (Created on: {card.date})
           </li>
         ))}
       </ul>

@@ -4,15 +4,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "dev": "concurrently \"npm run server\" \"npm start\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "concurrently": "^9.0.1",
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-scripts": "^5.0.1"
   }
 }

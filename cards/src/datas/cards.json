@@ -1,20 +1,62 @@
 [
   {
-    "id": 975540,
-    "title": "Capitale du monde?",
-    "response": "Tandor",
-    "date": "19/09/2024"
+    "id": 1,
+    "title": "What is \\(\\sin(2a)\\)?",
+    "response": "\\(2\\sin(a)\\cos(a)\\)",
+    "date": "22/09/2024"
   },
   {
-    "id": 12596664,
-    "title": "Capitale de l'océan?",
-    "response": "Pièce",
-    "date": "19/09/2024"
+    "id": 2,
+    "title": "What is the product of \\(\\cos(a)\\) and \\(\\cos(b)\\)?",
+    "response": "\\(\\frac{1}{2}[\\cos(a-b) + \\cos(a+b)]\\)",
+    "date": "22/09/2024"
   },
   {
-    "id": 330648242,
-    "title": "La France",
-    "response": "C'est pas Paris",
+    "id": 3,
+    "title": "What is the identity for \\(\\sin(a) + \\sin(b)\\)?",
+    "response": "\\(2\\sin\\left(\\frac{a+b}{2}\\right)\\cos\\left(\\frac{a-b}{2}\\right)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 4,
+    "title": "What is the identity for \\(\\cos(a) - \\cos(b)\\)?",
+    "response": "\\(-2\\sin\\left(\\frac{a+b}{2}\\right)\\sin\\left(\\frac{a-b}{2}\\right)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 5,
+    "title": "What is the double-angle formula for \\(\\cos(2a)\\)?",
+    "response": "\\(\\cos^2(a) - \\sin^2(a)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 6,
+    "title": "Formule pour évaluer \\(\\sin(2a)\\):",
+    "response": "\\(2\\sin(a)\\cos(a)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 7,
+    "title": "Formule pour évaluer \\((\\cos a)(\\cos b)\\):",
+    "response": "\\(\\frac{1}{2}[\\cos(a-b)+\\cos(a+b)]\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 8,
+    "title": "Identité trigonométrique pour évaluer \\(\\sin(a) + \\sin(b)\\):",
+    "response": "\\(2\\sin\\left(\\frac{a+b}{2}\\right)\\cos\\left(\\frac{a-b}{2}\\right)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 9,
+    "title": "Identité trigonométrique pour évaluer \\(\\cos(a) - \\cos(b)\\):",
+    "response": "\\(-2\\sin\\left(\\frac{a+b}{2}\\right)\\sin\\left(\\frac{a-b}{2}\\right)\\)",
+    "date": "22/09/2024"
+  },
+  {
+    "id": 10,
+    "title": "Formule de double angle pour évaluer \\(\\cos(2a)\\):",
+    "response": "\\(\\cos^2(a) - \\sin^2(a)\\)",
     "date": "22/09/2024"
   }
 ]
