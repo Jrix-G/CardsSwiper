@@ -58,5 +58,11 @@
     "title": "Formule de double angle pour évaluer \\(\\cos(2a)\\):",
     "response": "\\(\\cos^2(a) - \\sin^2(a)\\)",
     "date": "22/09/2024"
+  },
+  {
+    "id": 913604637,
+    "title": "solve \\(x^2 = 1\\)",
+    "response": "1",
+    "date": "23/09/2024"
   }
 ]
