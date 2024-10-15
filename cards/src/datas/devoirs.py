@@ -1,14 +1,18 @@
+# Ecrivez votre programme ci-dessous.
+# Bouton Fullscreen pour passer en plein ecran
+# Ensuite Save + Run puis Save + Evaluate
+# Pour des raisons techniques, laissez une ligne blanche avant de commencer votre programme.
 import math
 
 def coord_centre_cercle(x1, y1, x2, y2):
     x = (x1 + x2) / 2
-    y = (y1 + y2) / 2
-    return x, y
+    y = (y1+y2)/2
+    return x,y
 
 def coord_bas_losange(x1, y1, x2, y2):
     x = x2
-    y = y1 - (y2 - y1)
-    return x, y
+    y =  y1 - (y2-y1)
+    return x,y
 
 def coordDEF():
     xA = float(input("Enter the x-coordinate of point A"))
@@ -18,17 +22,17 @@ def coordDEF():
     xC = float(input("Enter the x-coordinate of point C"))
     yC = float(input("Enter the y-coordinate of point C"))
     
-    xD = (xA + xB) / 2
-    yD = (yA + yB) / 2
+    xD = (xA+xB)/2
+    yD = (yA+yB)/2
     xE = xB
-    yE = yA - (yB - yA)
-    xF = (xE + xC) / 2
-    yF = (yE + yC) / 2
+    yE = yA - (yB-yA)
+    xF = (xE+xC)/2
+    yF = (yE+yC)/2
     
     return xD, yD, xE, yE, xF, yF
-
+    
 def volume_sphere(r=1):
-    return (4 / 3) * math.pi * r**3
+    return (4/3)*math.pi*r**3
 
 def volume_cone(h, r=1):
     return (math.pi * r**2 * h) / 3
@@ -42,11 +46,17 @@ def volume_figure():
     h_above_cone = float(input("Enter the height of the above cone"))
 
     volume = (volume_sphere(r1) + volume_sphere(r2) + volume_sphere(r3) + volume_cone(h_cone, r_cone))
-    volume_above_cone = math.pi * r_cone**2 * h_above_cone
+    volume_above_cone = (math.pi*r_cone**2*h_above_cone)
     volume += volume_above_cone
     return volume
-
-if __name__ == "__main__": # NE PAS SUPPRIMER CETTE LIGNE
+        
+if __name__=="__main__": # NE PAS SUPPRIMER CETTE LIGNE
+    # Votre programme principal ne sera pas évalué.
+    # Utilisez-le pour tester votre programme en faisant
+    # les appels de votre choix.
+    # Respectez bien ce niveau d'identation.
     print("Debut du prog. principal")
+
+
 
 
