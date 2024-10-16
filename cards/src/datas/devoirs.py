@@ -1,62 +1,57 @@
-# Ecrivez votre programme ci-dessous.
-# Bouton Fullscreen pour passer en plein ecran
-# Ensuite Save + Run puis Save + Evaluate
-# Pour des raisons techniques, laissez une ligne blanche avant de commencer votre programme.
-import math
+def reverse():
+    n = input("Votre noms")
+    word = ""
+    for i in range(len(n)):
+        word += n[-1-i]
+    return n
 
-def coord_centre_cercle(x1, y1, x2, y2):
-    x = (x1 + x2) / 2
-    y = (y1+y2)/2
-    return x,y
+def space_delete():
+    n = input("Votre phrase")
+    word = ""
+    for i in range(len(n)):
+        if n[i] != " ":
+            word += n[i]
+    return word
 
-def coord_bas_losange(x1, y1, x2, y2):
-    x = x2
-    y =  y1 - (y2-y1)
-    return x,y
+def convert(a, b, c):
+    return a//60==b and (a-(a//60)*60 == c)
 
-def coordDEF():
-    xA = float(input("Enter the x-coordinate of point A"))
-    yA = float(input("Enter the y-coordinate of point A"))
-    xB = float(input("Enter the x-coordinate of point B"))
-    yB = float(input("Enter the y-coordinate of point B"))
-    xC = float(input("Enter the x-coordinate of point C"))
-    yC = float(input("Enter the y-coordinate of point C"))
-    
-    xD = (xA+xB)/2
-    yD = (yA+yB)/2
-    xE = xB
-    yE = yA - (yB-yA)
-    xF = (xE+xC)/2
-    yF = (yE+yC)/2
-    
-    return xD, yD, xE, yE, xF, yF
-    
-def volume_sphere(r=1):
-    return (4/3)*math.pi*r**3
+def inclus(n, b, c):
+    return 10**(b-1) <= n < 10**(c)
 
-def volume_cone(h, r=1):
-    return (math.pi * r**2 * h) / 3
+#Or 
+def incluss(n, b, c):
+    number = 1
+    i = 10
+    while n//i != 0:
+        number += 1
+        i += i**2
+    return(b <= n < c)
 
-def volume_figure():
-    r1 = float(input("Enter the radius of the left sphere"))
-    r2 = float(input("Enter the radius of the middle sphere"))
-    r3 = float(input("Enter the radius of the right sphere"))
-    r_cone = float(input("Enter the radius of the cone"))
-    h_cone = float(input("Enter the height of the cone"))
-    h_above_cone = float(input("Enter the height of the above cone"))
+def small(s, s1, s2):
+    return len(s1) == 1 and s1 != ("A" <= s1 <= "Z") and len(s2) == 1 and s2 != ("a" <= s <= "z") and s1+s2 in s or s2+s1 in s
 
-    volume = (volume_sphere(r1) + volume_sphere(r2) + volume_sphere(r3) + volume_cone(h_cone, r_cone))
-    volume_above_cone = (math.pi*r_cone**2*h_above_cone)
-    volume += volume_above_cone
-    return volume
-        
-if __name__=="__main__": # NE PAS SUPPRIMER CETTE LIGNE
-    # Votre programme principal ne sera pas évalué.
-    # Utilisez-le pour tester votre programme en faisant
-    # les appels de votre choix.
-    # Respectez bien ce niveau d'identation.
-    print("Debut du prog. principal")
+def facto(n):
+    if n <= 2:
+        return 2
+    else:
+        for i in range(2, n):
+            n *= i
+    return n
 
+def regle(n, x):
+    print("|", end="")
+    b = 1
+    for i in range(n):
+        print("-", end="")
+        if b == x:
+            print("|", end="")
+            b = 0
+        b += 1
 
-
-
+def word():
+    n = input("Word")
+    mot = input("Word")
+    while mot[0] != n:
+        mot = input("Wordddd")
+    print(mot)
