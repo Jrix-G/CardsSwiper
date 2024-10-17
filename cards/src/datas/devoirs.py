@@ -49,6 +49,7 @@ def regle(n, x):
             b = 0
         b += 1
 
+
 def word():
     n = input("Word")
     mot = input("Word")
