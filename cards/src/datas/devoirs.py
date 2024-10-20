@@ -1,12 +1,12 @@
-l = int(input("Nombre de ligne?: "))
-letter = "a"
-for i in range(l):
-    print(" " * i, end="")
-    for j in range(l - i):
-        if letter == "z":
-            print("z", end=" ")
-            letter = "a"
-        else:
-            print(letter, end=" ")
-            letter = chr(ord(letter) + 1)
-    print("")
+def estpremier(n):
+    if n < 2:
+        return False
+    else:
+        i = 2
+        while i*i <= n:
+            if n%i == 0:
+                return False
+            i += 1
+    return True
+
+print(estpremier(13))
