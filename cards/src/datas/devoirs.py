@@ -1,57 +1,22 @@
-def LireListeEntiers():
-    liste = []
-    while True:
-        try:
-            nombre = input("Element?")
-            if '.' in nombre:
-                print("Veuillez entrer un entier valide.")
-                continue
-            nombre = int(nombre)
-            if nombre < 0:
-                break
-            liste.append(nombre)
-        except ValueError:
-            print("Veuillez entrer un entier valide.")
-    return liste
+def commence_par(lettre, mot):
+    return mot[0] == lettre
 
-def LireListeReelsBornes(bmin=0, bmax=100):
-    liste = []
-    while True:
-        try:
-            nombre = float(input("Element?"))
-            if nombre < bmin or nombre > bmax:
-                break
-            liste.append(nombre)
-        except ValueError:
-            print("Veuillez entrer un réel valide.")
-    if not liste:
-        return None, None, 0
-    min_val = min(liste)
-    max_val = max(liste)
-    somme = sum(liste)
-    return min_val, max_val, somme
+def contient_voyelle(mot):
+    voyelles = "aeiouy"
+    for lettre in mot:
+        if lettre in voyelles:
+            return True
+    return False
 
-def MMSListe(liste):
-    if not liste:
-        return None, None, 0
-    min_val = liste[0]
-    max_val = liste[0]
-    somme = 0
-    for nombre in liste:
-        if nombre < min_val:
-            min_val = nombre
-        if nombre > max_val:
-            max_val = nombre
-        somme += nombre
-    return min_val, max_val, somme
+def derniere_consonne(mot):
+    voyelles = "aeiouy"
+    for i in range(len(mot) - 1, -1, -1):
+        if mot[i] not in voyelles:
+            return i, mot[i]
+    return None, None
 
-# Programme principal
-if __name__ == "__main__":
-    # Appel de la fonction LireListeEntiers
-    liste_entiers = LireListeEntiers()
-    print(liste_entiers)
-
-    # Appel de la fonction LireListeReelsBornes
-    min_val, max_val, somme = LireListeReelsBornes()
-    if min_val is not None:
-        print((min_val, max_val, somme))
+def double_consonne(mot):
+    voyelles = "aeiouy"
+    for i in range(len(mot) - 1):
+        if mot[i] == mot[i + 1] and mot[i] not
+    return mot not in mots_interdits
