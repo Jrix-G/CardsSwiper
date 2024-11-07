@@ -4,6 +4,3 @@ def commence_par(lettre, mot):
 def contient_voyelle(mot):
     voyelles = "aeiouy"
     for lettre in mot:
-        if lettre in voyelles:
-            return True
-    return False
