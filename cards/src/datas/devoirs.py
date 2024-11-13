@@ -18,9 +18,3 @@ def contient_voyelle(mot):
     for lettre in mot:    return mot[0] == lettre
 
 def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:    return mot[0] == lettre
-
-def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:
