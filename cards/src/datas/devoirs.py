@@ -1,20 +1,30 @@
-def commence_par(lettre, mot):
-    return mot[0] == lettre
+def prix_menu(nom_menu, avecBoisson=False, nb_supplement=0):
+    prix = 0
+    if nom_menu == "Basique":
+        prix = 9
+    elif nom_menu == "Gourmand":
+        prix = 15
+    elif nom_menu == "Complet":
+        prix = 19
+    else:
+        raise ValueError("Nom de menu invalide")
 
-def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:    return mot[0] == lettre
+    if avecBoisson:
+        prix += 4
 
-def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:    return mot[0] == lettre
+    prix += nb_supplement * 1.5
 
-def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:    return mot[0] == lettre
+    return prix
 
-def contient_voyelle(mot):
-    voyelles = "aeiouy"
-    for lettre in mot:    return mot[0] == lettre
+def table_Dupont():
+    prix_jacqueline = prix_menu("Basique")
+    prix_michel = prix_menu("Gourmand", avecBoisson=True)
+    prix_johanna = prix_menu("Basique", nb_supplement=2)
+    prix_antoine = prix_menu("Basique", avecBoisson=True, nb_supplement=1)
 
-def contient_voyelle(mot):
+    total = prix_jacqueline + prix_michel + prix_johanna + prix_antoine
+    return total
+
+# Exemple d'utilisation
+if __name__ == "__main__":
+    print(f"Le prix total pour la table des Dupont est de {table_Dupont()} euros.")
