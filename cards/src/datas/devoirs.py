@@ -55,19 +55,7 @@ def fusion(left, right):
 
 
 time_un = time.time()
-print(test(list_creation(10**1)))
+print(test(list_creation(10**7)))
 time_deux = time.time()
 print("temps", time_deux - time_un)
 
-def affichage_console():
-    i = 0
-    result = "#"
-    current_time = time.time()
-    while i < 100:
-        if current_time % 2 == 0:
-            print(result + "2", end="")
-            result += "#"
-        else:
-            print(result + "5", end="")
-            result += "#"
-        i += 1
