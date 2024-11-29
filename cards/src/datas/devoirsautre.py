@@ -1,21 +1,6 @@
 def tarif_carte(nom_carte):
     if nom_carte == "Jeune":
         return 50
-    elif nom_carte == "Senior":
-        return 60
-arifs.get((destination, depart), None) or (print("Trajet inconnu"), None)[1]
-
-def tarif_billet(depart, destination, modifiable=True, carte=None, periode=None):
-    prix = plein_tarif(depart, destination)
-    if prix is None:
-        return None
-
-    if carte == "Jeune":
-        if periode == "bleue":
-            prix *= 0.5
-        elif periode == "blanche":
-            prix *= 0.7
-    elif carte == "Senior":
         if periode == "bleue":
             prix *= 0.5
         elif periode == "blanche":
