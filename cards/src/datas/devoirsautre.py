@@ -6,24 +6,8 @@ def tarif_carte(nom_carte):
         elif periode == "blanche":
             prix *= 0.75
     elif carte is None and not modifiable:
-        prix *= 0.9
-
-    return prix
-
-def prix_client():
-    total = 0
-
-    carte_reduction = input("Voulez-vous acheter une carte de réduction ? (oui/non) ").strip().lower()
-    if carte_reduction == "oui":
-        carte = input("Choisissez votre carte : (Jeune/Senior) ").strip()
-        prix_carte = tarif_carte(carte)
-        if prix_carte is None:
-            return
-        total += prix_carte
-    else:
-        carte = None
-
-    billet = input("Voulez-vous acheter un billet ? (oui/non) ").strip().lower()
+        prix *=ction = input("Voulez-vous acheter une carte de réduction ? (oui/non) ").strip().lower()
+    if carte_reduction == "oui":n billet ? (oui/non) ").strip().lower()
     if billet == "oui":
         depart = input("Depart : ").strip()
         destination = input("Destination : ").strip()
