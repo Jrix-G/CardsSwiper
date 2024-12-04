@@ -1,20 +1,16 @@
-def tarif_carte(nom_carte):
-    if nom_carte == "Jeune":
-        return 50
-        if periode == "bleue":
-            prix *= 0.5
-        elif periode == "blanche":
-            prix *= 0.75
-    elif carte is None and not modifiable:
-        prix *=ction = input("Voulez-vous acheter une carte de réduction ? (oui/non) ").strip().lower()
-    if carte_reduction == "oui":n billet ? (oui/non) ").strip().lower()
-    if billet =et = tarif_billet(depart, destination, modifiable=modifiable)
-            else:
-                prix_billet = tarif_billet(depart, destination)
+def moyenne_etudiant(etudiant):
+    moyenne = 0
+    for i in etudiant["notes"]:
+        moyenne += etudiant["notes"][i]
+    return moyenne / len(etudiant["notes"])
 
-        if prix_billet is None:
-            return
-        total += prix_billet
+def meilleur(notes_groupe):
+    print(notes_groupe[0]["notes"])
+    meilleure_note = moyenne_etudiant(notes_groupe[0])
+    for i in range(1, len(notes_groupe)):
+        if moyenne_etudiant(notes_groupe[i]) > meilleure_note:
+            meilleure_note = moyenne_etudiant(notes_groupe[i])
+            name = notes_groupe[i]["nom"]
+    return meilleure_note, name
 
-    print(f"Prix total : {total} euros")
-    return total
+print("JKASDK", meilleur([{"classe": 2, "nom": "Patrick", "notes": {"math": 12, "fr": 14, "hist": 10}},{"classe": 2, "nom": "Jason", "notes": {"math": 15, "fr": 20, "hist": 10}}])) 
