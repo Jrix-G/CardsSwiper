@@ -1,12 +1,24 @@
-def compte(liste):
-    dicoR = {}
-    for c in liste:
-        print("SAODAOSD", c)
-        if c in dicoR:
-            dicoR[c] += 1
-        else:
-            dicoR[c] = 1
-    return dicoR
+def decomp(n):
+    digit = []
+    while n > 0:
+        digit.append(n%10)
+        n //= 10
 
-print(compte("Salut commment ca va moi ca va bien"))
- 
+    return digit
+
+def estA(n):
+    liste = decomp(n)
+    nombre = 0
+    for c in liste:
+        nombre += c**len(liste)
+    return nombre == n
+
+def allbelo(nmax):
+    liste = []
+    for i in range(nmax):
+        if estA(i):
+            liste.append(i)
+
+    return liste
+
+faire exercice sur le triangle de pascal.
